@@ -31,6 +31,9 @@
 		37A06F4C1D52EB2800181D25 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A06F4B1D52EB2800181D25 /* CoreTelephony.framework */; };
 		37A06F4E1D52EB2E00181D25 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A06F4D1D52EB2E00181D25 /* Security.framework */; };
 		37A06F521D52F56400181D25 /* RVDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A06F511D52F56400181D25 /* RVDelegate.m */; };
+		37A06F571D532AF600181D25 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37A06F551D532AF600181D25 /* UnityAds.bundle */; };
+		37A06F581D532AF600181D25 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A06F561D532AF600181D25 /* UnityAds.framework */; };
+		37A06F5A1D532AFD00181D25 /* SUUnityAdsAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A06F591D532AFD00181D25 /* SUUnityAdsAdapter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		37A06F4D1D52EB2E00181D25 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		37A06F501D52F56400181D25 /* RVDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVDelegate.h; sourceTree = "<group>"; };
 		37A06F511D52F56400181D25 /* RVDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVDelegate.m; sourceTree = "<group>"; };
+		37A06F551D532AF600181D25 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UnityAds.bundle; path = ../UnityAds.bundle; sourceTree = "<group>"; };
+		37A06F561D532AF600181D25 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = ../UnityAds.framework; sourceTree = "<group>"; };
+		37A06F591D532AFD00181D25 /* SUUnityAdsAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SUUnityAdsAdapter.framework; path = ../SUUnityAdsAdapter.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 				37A06F461D52EB1500181D25 /* StoreKit.framework in Frameworks */,
 				37A06F441D52EB0F00181D25 /* libxml2.tbd in Frameworks */,
 				37A06F421D52EB0800181D25 /* libz.tbd in Frameworks */,
+				37A06F5A1D532AFD00181D25 /* SUUnityAdsAdapter.framework in Frameworks */,
 				37A06F401D52EB0000181D25 /* MobileCoreServices.framework in Frameworks */,
 				37A06F3E1D52EAF900181D25 /* CFNetwork.framework in Frameworks */,
 				37A06F3C1D52EAF100181D25 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +94,7 @@
 				37A06F321D52EAD300181D25 /* AVFoundation.framework in Frameworks */,
 				37A06F301D52EACF00181D25 /* Foundation.framework in Frameworks */,
 				37A06F2E1D52EAB000181D25 /* Supersonic.framework in Frameworks */,
+				37A06F581D532AF600181D25 /* UnityAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +147,9 @@
 		37A06F4F1D52EB4600181D25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37A06F591D532AFD00181D25 /* SUUnityAdsAdapter.framework */,
+				37A06F551D532AF600181D25 /* UnityAds.bundle */,
+				37A06F561D532AF600181D25 /* UnityAds.framework */,
 				37A06F2D1D52EAB000181D25 /* Supersonic.framework */,
 				37A06F4D1D52EB2E00181D25 /* Security.framework */,
 				37A06F4B1D52EB2800181D25 /* CoreTelephony.framework */,
@@ -218,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A06F571D532AF600181D25 /* UnityAds.bundle in Resources */,
 				374295871D50834800B47195 /* LaunchScreen.storyboard in Resources */,
 				374295841D50834800B47195 /* Assets.xcassets in Resources */,
 				374295821D50834800B47195 /* Main.storyboard in Resources */,
@@ -353,6 +365,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/unity-ads-supersonic-ios",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "unity-ads-supersonic-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -372,6 +385,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/unity-ads-supersonic-ios",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "unity-ads-supersonic-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
