@@ -46,6 +46,10 @@
  */
 - (void)supersonicRVAdRewarded:(SupersonicPlacementInfo*)placementInfo{
 
+    // by default, rewardName = Virtual Item
+    NSString * rewardName = [placementInfo rewardName];
+    NSLog(@"[Supersonic UADS] rewarded with placement name = %@", rewardName);
+    
 }
 
 
