@@ -30,6 +30,7 @@
 		37A06F4A1D52EB2100181D25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A06F491D52EB2100181D25 /* CoreLocation.framework */; };
 		37A06F4C1D52EB2800181D25 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A06F4B1D52EB2800181D25 /* CoreTelephony.framework */; };
 		37A06F4E1D52EB2E00181D25 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A06F4D1D52EB2E00181D25 /* Security.framework */; };
+		37A06F521D52F56400181D25 /* RVDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A06F511D52F56400181D25 /* RVDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		37A06F491D52EB2100181D25 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		37A06F4B1D52EB2800181D25 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		37A06F4D1D52EB2E00181D25 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		37A06F501D52F56400181D25 /* RVDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVDelegate.h; sourceTree = "<group>"; };
+		37A06F511D52F56400181D25 /* RVDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				374295851D50834800B47195 /* LaunchScreen.storyboard */,
 				374295881D50834800B47195 /* Info.plist */,
 				374295771D50834800B47195 /* Supporting Files */,
+				37A06F501D52F56400181D25 /* RVDelegate.h */,
+				37A06F511D52F56400181D25 /* RVDelegate.m */,
 			);
 			path = "unity-ads-supersonic-ios";
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			files = (
 				3742957F1D50834800B47195 /* ViewController.m in Sources */,
 				3742957C1D50834800B47195 /* AppDelegate.m in Sources */,
+				37A06F521D52F56400181D25 /* RVDelegate.m in Sources */,
 				374295791D50834800B47195 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
